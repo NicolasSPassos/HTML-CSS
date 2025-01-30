@@ -22,10 +22,22 @@ thead, tfoot{
     color: white;
 }
 
+tbody > tr:nth-child(even){
+    background-color: rgb(115, 130, 182);
+}
+
 td, th{
     border: 2px solid black;
     padding: 5px;
 }
+
+caption{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;  
+    background-color: lightgray;
+}
+
 
 </style>
 
@@ -34,11 +46,11 @@ td, th{
     <h1>Uso de tabelas grandes</h1>
 
     <table>
-
+        <caption>População dos principais estados</caption>
 <thead>
 <tr>
-    <th>Estado</th>
-    <th>População</th>
+    <th scope="col">Estado</th>
+    <th scope="col">População</th>
 </tr>
 </thead>
 
@@ -71,7 +83,7 @@ td, th{
 
 <tfoot>
 <tr>
-    <th>População total</th>
+    <th scope="row">População total</th>
     <td>122.036.953</td>
 </tr>
 </tfoot>
