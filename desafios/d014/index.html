@@ -21,6 +21,13 @@
             padding: 7px;
             text-align: center;
         }
+
+.row{
+    background-color: white;
+    font-weight: bolder;
+    color: black;
+}
+
     </style>
 
 </head>
@@ -36,13 +43,59 @@
         <th rowspan="2" scope="col">Média</th>
     </tr>
     <tr>
-        <th>Nota 1</th>
-        <th>Nota 2</th>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th>
     </tr>
 </thead>
 
 <tbody>
 
+    <tr>
+        <th rowspan="4" scope="rowgroup" class="row"> Exatas</th>
+        <td>Matemática</td>
+        <td>7.0</td>
+        <td>8.0</td>
+        <td>7.5</td>
+    </tr>
+    <tr>
+        <td>Física</td>
+        <td>5.0</td>
+        <td>7.0</td>
+        <td>6.0</td>
+    </tr>
+    <tr>
+        <td>Química</td>
+        <td>8.0</td>
+        <td>8.0</td>
+        <td>8.0</td>
+    </tr>
+    <tr>
+        <td>Biologia</td>
+        <td>9.0</td>
+        <td>8.0</td>
+        <td>8.5</td>
+    </tr>
+    <tr>
+        <th colspan="4" scope="row" style="text-align: left;">Média de Exatas</th>
+        <th scope="row">7.5</th>
+    </tr>
+    <tr>
+        <th rowspan="2" scope="rowgroup" class="row">Humanas</th>
+        <td>História</td>
+        <td>9.0</td>
+        <td>7.0</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>Geografia</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+    </tr>
+    <tr>
+        <th colspan="4" scope="row" style="text-align: left;">Média de Humanas</th>
+        <th scope="row">9.0</th>
+    </tr>
 </tbody>
 
     </table>
