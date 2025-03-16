@@ -24,8 +24,8 @@ main{
 }
 
 section{
-  width: 250px;
-  height: 500px;
+  width: 275px;
+  height: 550px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,7 +41,7 @@ section{
 
 img{
   height: 200px;
-  width: 250px;
+  width: 275px;
   object-fit: cover;
   border-radius: 25px 25px 0px 0px;
 }
