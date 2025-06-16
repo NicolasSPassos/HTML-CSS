@@ -2,8 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
 :root{
@@ -14,8 +17,8 @@
     --cor4:#A94442;
     --cor5:#666666;
 
-    --font-padrao: "Lato", arial, sans-serif;
-    --font-destaque: "Playfair Display", helvetica,arial,serif;
+    --font-padrao: "Work Sans", arial, sans-serif;
+    --font-destaque: "Playfair Display","Roboto Slab",helvetica,arial,serif;
 }
 
 *{
@@ -47,6 +50,12 @@ div.video > iframe{
     height: 90%;
 }
 
+.poema{
+    font-family: "Satisfy";
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
 header{
    background-image: linear-gradient(to bottom,var(--cor4), var(--cor2) );
     min-height: 150px;
@@ -60,6 +69,7 @@ header> h1{
     font-size: 2.5em;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.714);
+    
 }
 
 header > p{
@@ -93,6 +103,7 @@ main p{
     text-indent: 20px;
     font-size: 1.1rem;
     line-height: 2em;
+    font-family: var(--font-padrao);
 }
 
 main strong{
@@ -124,13 +135,13 @@ main img.pequena{
 }
 
 main  h1{
-    font-family: '--font-destaque';
+    font-family: var(--font-destaque);
     color: var(--cor4);
     letter-spacing: 0.05rem;
 }
 
 main h2{
-    font-family: '--font-destaque';
+    font-family:var(--font-destaque);
     color: var(--cor3);
     font-size: 1.5em;
     background-image: linear-gradient(to right, var(--cor4),var(--cor0));
