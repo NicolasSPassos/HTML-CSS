@@ -163,6 +163,7 @@ aside>p{
 
 aside>ul>li{
     color: var(--cor3);
+    list-style-type: none;
 }
 
 aside > h3{
@@ -173,6 +174,11 @@ aside > h3{
     border-radius: 10px 10px 0px 0px;
     text-align: center;
 }
+
+li{
+ margin-bottom: 10px;
+}
+
 
 footer{
     background-color: var(--cor5);
